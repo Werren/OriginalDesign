@@ -1,7 +1,7 @@
 //size of canvas
 void setup()
 {
-  size(750, 500);
+  size(300, 500);
 }
 //execution of code
 void draw()
