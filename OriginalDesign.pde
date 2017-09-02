@@ -13,10 +13,10 @@ void draw()
 }
 void cupcake()
 {
-  //*color palette
-  //fill(204, 204, 232); 
-  //fill(234, 206, 206);
-  //fill(252, 251, 244);
+  /*color palette
+   fill(204, 204, 232); 
+   fill(234, 206, 206);
+   fill(252, 251, 244);*/
   //fundamentals
   fill(252, 251, 244);
   noStroke();
@@ -77,7 +77,7 @@ void wrapper()
   rotate(0.05);
   beginShape();
   vertex(151, 257);
-  vertex(150+15, 257+75);
+  vertex(150+15+8, 257+75);
   vertex(150+70+5, 257+70+20);
   vertex(150+70+70-5, 257+70+20-20);
   vertex(150+70+70+10-4, 257+70+20-20-80);
@@ -86,20 +86,45 @@ void wrapper()
 }
 void detailsAndShading()
 {
+  //cupcake shading
   fill(237, 237, 252);
   quad(193, 170, 213, 180, 224, 180, 203, 185);
   quad(192, 170, 211, 160, 219, 163, 215, 165);
-  //quad(211,166,
-   fill(234, 234, 249);
-  quad(193, 170, 189, 182, 203, 185, 193, 170);
+  fill(234, 234, 249);
+  quad(193, 170, 187, 183, 205, 185, 193, 170);
   quad(212, 160, 219, 163, 217, 160, 214, 158);
+  quad(211, 165, 205, 177, 192, 170, 192, 169);
+  quad(187, 183, 170, 205, 192, 210, 180, 200);
+  quad(173, 207, 145, 240, 148, 255, 155, 240);
+  quad(148, 256, 182, 265, 188, 260, 154, 240);
+  triangle(222,150,212,160,220,163);
+  //cupcake holder thing that i forgot the word too oops
+  fill(#E8BBBB);
+  pushMatrix();
+  translate(0, 2);
+  triangle(189, 262, 181, 268, 205, 270);
+  triangle(202, 342, 181, 268, 205, 270);
+  popMatrix();
+  pushMatrix();
+  translate(-29, -5);
+  triangle(205, 342, 181, 264, 205, 270);
+  popMatrix();
+  pushMatrix();
+  translate(29, 5);
+  triangle(205, 342, 181, 270, 205, 267);
+  popMatrix();
+  pushMatrix();
+  translate(29*2, 0);
+  triangle(205, 335, 181, 273, 205, 270);
+  popMatrix();
+   pushMatrix();
+  translate(29*3-3, 0);
+  triangle(200, 330, 181, 268, 210, 250);
+  popMatrix();
 }
 void test()
 {
   //testing coordinates
   fill(0, 0, 0);
-  ellipse(211, 166, 1, 1);
+  //ellipse(212, 160, 1, 1);
 }
-
-
-
